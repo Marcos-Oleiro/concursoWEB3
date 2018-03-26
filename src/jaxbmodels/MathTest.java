@@ -35,7 +35,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="mq12" type="{}answer"/>
  *         &lt;element name="mq13" type="{}answer"/>
  *         &lt;element name="mq14" type="{}answer"/>
- *         &lt;element name="qm15" type="{}answer"/>
+ *         &lt;element name="mq15" type="{}answer"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -60,7 +60,7 @@ import javax.xml.bind.annotation.XmlType;
     "mq12",
     "mq13",
     "mq14",
-    "qm15"
+    "mq15"
 })
 public class MathTest {
 
@@ -432,7 +432,7 @@ public class MathTest {
     }
 
     /**
-     * Obtém o valor da propriedade qm15.
+     * Obtém o valor da propriedade mq15.
      * 
      * @return
      *     possible object is
@@ -444,7 +444,7 @@ public class MathTest {
     }
 
     /**
-     * Define o valor da propriedade qm15.
+     * Define o valor da propriedade mq15.
      * 
      * @param value
      *     allowed object is
