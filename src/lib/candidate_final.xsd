@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+		<xs:simpleType name="answer">
+			<xs:restriction base="xs:string">
+				<xs:pattern value="(A|B|C|D|E|N){1}"></xs:pattern>
+			</xs:restriction>
+		</xs:simpleType>
+		
+		<xs:complexType name="port_test">
+			<xs:sequence>
+				<xs:element name="pq1" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pq2" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pq3" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pq4" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pq5" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pq6" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pq7" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pq8" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pq9" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pq10" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pq11" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pq12" type="answer" minOccurs="1" maxOccurs="1" /> 
+				<xs:element name="pq13" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pq14" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="pq15" type="answer" minOccurs="1" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+		
+		<xs:complexType name="math_test">
+			<xs:sequence>
+				<xs:element name="mq1" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="mq2" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="mq3" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="mq4" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="mq5" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="mq6" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="mq7" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="mq8" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="mq9" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="mq10" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="mq11" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="mq12" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="mq13" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="mq14" type="answer" minOccurs="1" maxOccurs="1" /> 
+				<xs:element name="mq15" type="answer" minOccurs="1" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+				
+		<xs:complexType name="spec_test">
+			<xs:sequence>
+				<xs:element name="sq1" type="answer" minOccurs="1" maxOccurs="1" /> 
+				<xs:element name="sq2" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq3" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq4" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq5" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq6" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq7" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq8" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq9" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq10" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq11" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq12" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq13" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq14" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq15" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq16" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq17" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq18" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq19" type="answer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="sq20" type="answer" minOccurs="1" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+		
+	<xs:element name="candidate">
+			
+			<xs:complexType >
+				<xs:sequence>
+					<xs:element name="registration_number" type="xs:integer" minOccurs="1" maxOccurs="1" />
+					<xs:element name="registration_date" type="xs:date" minOccurs="1" maxOccurs="1" />
+					<xs:element name="position" type="xs:string" minOccurs="1" maxOccurs="1" />
+					<xs:element name="port_test" type="port_test" minOccurs="1" maxOccurs="1" />
+					<xs:element name="math_test" type="math_test" minOccurs="1" maxOccurs="1" />
+					<xs:element name="spec_test" type="spec_test" minOccurs="1" maxOccurs="1" />
+					<xs:element name="port_count" type="xs:integer" minOccurs="1" maxOccurs="1" />
+					<xs:element name="math_count" type="xs:integer" minOccurs="1" maxOccurs="1" />
+					<xs:element name="spec_count" type="xs:integer" minOccurs="1" maxOccurs="1" />
+					<xs:element name="final_count" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+				</xs:sequence>
+			</xs:complexType>
+	</xs:element>
+	</xs:schema>
